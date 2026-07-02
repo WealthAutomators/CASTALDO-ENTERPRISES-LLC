@@ -5,7 +5,7 @@ export const testimonials: Testimonial[] = [
     id: "1",
     name: "Sarah Mitchell",
     rating: 5,
-    text: "The bath towels are incredibly soft and absorbent. We've replaced every towel in our home with Ottanwa Commerce.",
+    text: "The bath towels are incredibly soft and absorbent. We've replaced every towel in our home with Otanwa Commerce.",
     location: "Austin, TX",
   },
   {

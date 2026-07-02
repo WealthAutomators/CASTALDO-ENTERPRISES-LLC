@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { featuredCollection } from "@/data/homepage";
-import { getProductsByCategory } from "@/data/products";
+import { featuredCollection, homepageFeaturedSlugs } from "@/data/homepage";
+import { getProductsBySlugs } from "@/data/products";
 import { Container } from "@/components/ui/container";
 import { ProductCard } from "@/components/product/product-card";
 
 export function FeaturedCollection() {
-  const products = getProductsByCategory(featuredCollection.categorySlug).slice(0, 4);
+  const products = getProductsBySlugs(homepageFeaturedSlugs);
 
   return (
     <section className="py-12 md:py-16">

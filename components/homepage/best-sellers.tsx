@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { bestSellerTabs } from "@/data/homepage";
-import { getBestsellerProducts } from "@/data/products";
+import { bestSellerTabs, homepageBestsellerSlugs } from "@/data/homepage";
+import { getBestsellerProducts, getProductsBySlugs } from "@/data/products";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ProductCard } from "@/components/product/product-card";
@@ -10,12 +10,13 @@ import { cn } from "@/lib/utils";
 
 export function BestSellers() {
   const [activeTab, setActiveTab] = useState("all");
+  const curatedBestsellers = getProductsBySlugs(homepageBestsellerSlugs);
   const bestsellers = getBestsellerProducts();
 
   const filtered =
     activeTab === "all"
-      ? bestsellers
-      : bestsellers.filter((p) => p.categorySlug === activeTab);
+      ? curatedBestsellers
+      : bestsellers.filter((p) => p.categorySlug === activeTab).slice(0, 4);
 
   return (
     <section className="py-12 md:py-16">
@@ -40,7 +41,7 @@ export function BestSellers() {
         </div>
 
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-6">
-          {filtered.slice(0, 8).map((product) => (
+          {filtered.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>

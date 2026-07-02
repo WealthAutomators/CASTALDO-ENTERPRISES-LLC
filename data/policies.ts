@@ -2,7 +2,7 @@ import { company } from "./company";
 
 export const faqItems = [
   {
-    question: "What materials are Ottanwa Commerce towels made from?",
+    question: "What materials are Otanwa Commerce towels made from?",
     answer:
       "Our towels are crafted from premium long-staple cotton, organic cotton, micro-cotton blends, and bamboo rayon depending on the product. Every material is OEKO-TEX certified and selected for softness, absorbency, and durability.",
   },
@@ -55,7 +55,7 @@ export const faqItems = [
 
 export const shippingPolicy = {
   title: "Shipping Policy",
-  description: "Everything you need to know about how we deliver your Ottanwa Commerce orders.",
+  description: "Everything you need to know about how we deliver your Otanwa Commerce orders.",
   sections: [
     {
       title: "Processing Time",
@@ -90,7 +90,7 @@ export const shippingPolicy = {
 
 export const returnPolicy = {
   title: "Return Policy",
-  description: "We want you to love every Ottanwa Commerce purchase. If you're not satisfied, we're here to help.",
+  description: "We want you to love every Otanwa Commerce purchase. If you're not satisfied, we're here to help.",
   sections: [
     {
       title: "30-Day Return Window",
@@ -128,7 +128,7 @@ export const returnPolicy = {
 
 export const refundPolicy = {
   title: "Refund Policy",
-  description: "Our commitment to fair and transparent refunds for every Ottanwa Commerce order.",
+  description: "Our commitment to fair and transparent refunds for every Otanwa Commerce order.",
   sections: [
     {
       title: "Refund Eligibility",
@@ -163,7 +163,7 @@ export const refundPolicy = {
 
 export const privacyPolicy = {
   title: "Privacy Policy",
-  description: "Last updated: January 1, 2026. How Ottanwa Commerce collects, uses, and protects your information.",
+  description: "Last updated: January 1, 2026. How Otanwa Commerce collects, uses, and protects your information.",
   sections: [
     {
       title: "Information We Collect",
@@ -206,12 +206,12 @@ export const privacyPolicy = {
 
 export const termsPolicy = {
   title: "Terms & Conditions",
-  description: "Please read these terms carefully before using the Ottanwa Commerce website.",
+  description: "Please read these terms carefully before using the Otanwa Commerce website.",
   sections: [
     {
       title: "Acceptance of Terms",
       content:
-        "By accessing and using the Ottanwa Commerce website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website.",
+        "By accessing and using the Otanwa Commerce website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website.",
     },
     {
       title: "Products & Pricing",
@@ -226,12 +226,12 @@ export const termsPolicy = {
     {
       title: "Intellectual Property",
       content:
-        "All content on this website — including text, images, logos, and design — is the property of Ottanwa Commerce and protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.",
+        "All content on this website — including text, images, logos, and design — is the property of Otanwa Commerce and protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.",
     },
     {
       title: "Limitation of Liability",
       content:
-        "Ottanwa Commerce shall not be liable for any indirect, incidental, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the product in question.",
+        "Otanwa Commerce shall not be liable for any indirect, incidental, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the product in question.",
     },
     {
       title: "Governing Law",

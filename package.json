@@ -1,12 +1,15 @@
 {
-  "name": "ottanwa-commerce",
+  "name": "otanwa-commerce",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "images:unsplash": "node scripts/download-unsplash-images.mjs",
+    "images:apply": "node scripts/apply-custom-images.mjs",
+    "images:homepage": "node scripts/download-homepage-images.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.15",

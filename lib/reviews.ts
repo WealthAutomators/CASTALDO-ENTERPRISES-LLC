@@ -9,6 +9,8 @@ const FIRST_NAMES = [
 
 const LAST_INITIALS = "ABCDEFGHJKLMNPRSTW";
 
+const REVIEW_PHOTOS = Array.from({ length: 8 }, (_, i) => `/reviews/review-${i + 1}.jpg`);
+
 const REVIEW_TITLES_5 = [
   "Absolutely love these",
   "Best purchase I've made",
@@ -50,13 +52,13 @@ const BODIES_5 = [
   "I've gone through a lot of towels over the years and these are by far the best. They're incredibly absorbent and stay soft after multiple washes. Already ordered a second set for the guest bathroom.",
   "Bought these after reading the reviews and I'm so glad I did. The quality is immediately noticeable — thick, plush, and they dry quickly. My whole family loves them.",
   "We replaced all our old towels with these and the difference is night and day. They feel like something you'd find at a nice hotel. Washing instructions were easy to follow.",
-  "I've had these for about two months now and they still look and feel brand new. No fading, no thinning. The color is exactly as shown. Very impressed with Ottanwa Commerce.",
+  "I've had these for about two months now and they still look and feel brand new. No fading, no thinning. The color is exactly as shown. Very impressed with Otanwa Commerce.",
   "Gifted a set to my mom and she called me twice to say how much she loves them. That says it all. Ordering more for myself now.",
   "The absorbency on these is incredible. I have thick hair and one of these towels actually dries it properly. Haven't found that with other brands.",
   "Quality you can feel the moment you pick them up. Stitched well, no loose threads, and they fluff up beautifully in the dryer. 10/10 would recommend.",
   "Our old towels were scratchy and worn out. These are the complete opposite — soft, substantial, and they actually get softer with each wash. Very happy customer.",
   "I was skeptical about ordering towels online but these delivered. Literally. Fast shipping and the product quality is top notch. Already on my third wash cycle with zero issues.",
-  "Perfect weight — not too heavy, not too thin. They hang nicely on the rack and dry between uses without getting that musty smell. Details matter and Ottanwa nailed it.",
+  "Perfect weight — not too heavy, not too thin. They hang nicely on the rack and dry between uses without getting that musty smell. Details matter and Otanwa nailed it.",
 ];
 
 const BODIES_4 = [
@@ -154,7 +156,7 @@ export function generateReviewsForProduct(productId: string, productName: string
       date: formatDate(daysAgo),
       verified: rand() > 0.15,
       helpful: Math.floor(rand() * 48),
-      image: hasImage ? `/products/review-photo.jpg` : undefined,
+      image: hasImage ? REVIEW_PHOTOS[Math.floor(rand() * REVIEW_PHOTOS.length)] : undefined,
     });
   }
 

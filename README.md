@@ -1,8 +1,8 @@
-# Ottanwa Commerce
+# Otanwa Commerce
 
 A production-quality, reusable ecommerce storefront template built with Next.js 15 App Router, TypeScript, and Tailwind CSS.
 
-This is the master template for Ottanwa Commerce — a fictional US-based towel and home linens retailer. Duplicate this repository and swap brand assets, colors, and data to launch new stores without rewriting components.
+This is the master template for Otanwa Commerce — a fictional US-based towel and home linens retailer. Duplicate this repository and swap brand assets, colors, and data to launch new stores without rewriting components.
 
 ## Tech Stack
 

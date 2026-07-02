@@ -65,6 +65,48 @@ export const features: Feature[] = [
 
 export const dealsEndTime = new Date(Date.now() + 1000 * 60 * 60 * 18).toISOString();
 
+/** Curated product lists — no slug appears twice across homepage sections */
+export const homepageDealsSlugs = [
+  "luxury-cotton-bath-towel-set",
+  "coastal-stripe-beach-towel",
+  "plush-hooded-bathrobe",
+  "monogrammed-gift-set",
+] as const;
+
+export const homepageBestsellerSlugs = [
+  "organic-bath-sheet",
+  "spa-terry-bath-towel",
+  "premium-hand-towel-set",
+  "microfiber-cleaning-cloth-set",
+] as const;
+
+export const homepageFeaturedSlugs = [
+  "quick-dry-bath-towel",
+  "striped-bath-towel-pair",
+  "waffle-knit-robe",
+  "soft-face-cloth-set",
+] as const;
+
+export const homepageSectionSlugs: Record<string, readonly string[]> = {
+  "cleaning-towels": [
+    "glass-cleaning-cloths",
+    "cotton-dish-towel-pack",
+    "shop-towel-roll",
+    "exfoliating-face-cloths",
+  ],
+  "beach-towels": [
+    "tropical-print-beach-towel",
+    "compact-travel-beach-towel",
+    "cabana-stripe-beach-towel",
+  ],
+  accessories: [
+    "towel-ladder-rack",
+    "wall-mounted-towel-hooks",
+    "towel-storage-basket",
+  ],
+  "face-towels": ["bamboo-face-towels", "spa-washcloth-trio"],
+};
+
 export const promotionalBanner: PromoBanner = {
   id: "1",
   title: "Refresh Your Bathroom Essentials",
@@ -78,7 +120,7 @@ export const promotionalBanner: PromoBanner = {
 export const aboutSection = {
   title: "Crafted For Comfort, Built To Last",
   description:
-    "At Ottanwa Commerce, we believe everyday essentials should feel exceptional. Our towels are sourced from premium cotton and designed to stay soft wash after wash.",
+    "At Otanwa Commerce, we believe everyday essentials should feel exceptional. Our towels are sourced from premium cotton and designed to stay soft wash after wash.",
   checklist: [
     "100% premium long-staple cotton",
     "OEKO-TEX certified materials",
@@ -133,16 +175,16 @@ export const bestSellerTabs = [
 ];
 
 export const instagramPosts: InstagramPost[] = [
-  { id: "1", image: "/instagram/1.jpg", alt: "Bathroom towel styling" },
-  { id: "2", image: "/instagram/2.jpg", alt: "Folded bath towels" },
-  { id: "3", image: "/instagram/3.jpg", alt: "Beach towel by the pool" },
-  { id: "4", image: "/instagram/4.jpg", alt: "Spa robe detail" },
-  { id: "5", image: "/instagram/5.jpg", alt: "Neutral bathroom decor" },
-  { id: "6", image: "/instagram/6.jpg", alt: "Towel stack on shelf" },
+  { id: "1", image: "/instagram/1.jpg", alt: "Folded bath towels on a wooden shelf" },
+  { id: "2", image: "/instagram/2.jpg", alt: "Spa bathroom with soft white linens" },
+  { id: "3", image: "/instagram/3.jpg", alt: "Colorful beach towels by the pool" },
+  { id: "4", image: "/instagram/4.jpg", alt: "Minimal bathroom styling with cotton towels" },
+  { id: "5", image: "/instagram/5.jpg", alt: "Stacked hand towels in neutral tones" },
+  { id: "6", image: "/instagram/6.jpg", alt: "Luxury linen display in a bright bathroom" },
 ];
 
 export const newsletter = {
-  title: "Join the Ottanwa Community",
+  title: "Join the Otanwa Community",
   description:
     "Subscribe for exclusive offers, new arrivals, and styling inspiration delivered to your inbox.",
   placeholder: "Enter your email address",

@@ -22,11 +22,11 @@ export default function AboutPage() {
       <Container className="pb-16">
         <div className="grid items-center gap-10 py-12 md:grid-cols-2 lg:gap-16">
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border">
-            <Image src="/banners/about.jpg" alt="About Ottanwa Commerce" fill className="object-cover" sizes="50vw" />
+            <Image src="/banners/about.jpg" alt="About Otanwa Commerce" fill className="object-cover" sizes="50vw" />
           </div>
           <PageSection title="Our Story">
             <p>
-              Ottanwa Commerce was founded with a simple belief: the towels and linens you use every day
+              Otanwa Commerce was founded with a simple belief: the towels and linens you use every day
               should feel exceptional. What started as a small family operation in Portland, Oregon has
               grown into a trusted name for premium home textiles across the United States.
             </p>

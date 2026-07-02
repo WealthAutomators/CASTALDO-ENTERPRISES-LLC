@@ -1,8 +1,8 @@
 export const company = {
-  name: "Ottanwa Commerce",
+  name: "Otanwa Commerce",
   tagline: "Premium Towels For Every Home",
   description:
-    "Ottanwa Commerce offers thoughtfully crafted towels and home linens designed for comfort, durability, and everyday luxury.",
+    "Otanwa Commerce offers thoughtfully crafted towels and home linens designed for comfort, durability, and everyday luxury.",
   phone: "424-347-1487",
   email: "otanwacommercellc@gmail.com",
   address: {
@@ -13,11 +13,11 @@ export const company = {
     country: "United States",
   },
   social: {
-    instagram: "https://instagram.com/ottanwacommerce",
-    facebook: "https://facebook.com/ottanwacommerce",
-    twitter: "https://twitter.com/ottanwacommerce",
-    pinterest: "https://pinterest.com/ottanwacommerce",
+    instagram: "https://instagram.com/otanwacommerce",
+    facebook: "https://facebook.com/otanwacommerce",
+    twitter: "https://twitter.com/otanwacommerce",
+    pinterest: "https://pinterest.com/otanwacommerce",
   },
   hours: "Mon–Fri: 9am–6pm EST",
-  copyright: `© ${new Date().getFullYear()} Ottanwa Commerce. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Otanwa Commerce. All rights reserved.`,
 };

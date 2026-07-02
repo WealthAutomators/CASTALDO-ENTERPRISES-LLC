@@ -1,7 +1,7 @@
 "use client";
 
-import { productSections } from "@/data/homepage";
-import { getProductsByCategory } from "@/data/products";
+import { productSections, homepageSectionSlugs } from "@/data/homepage";
+import { getProductsBySlugs } from "@/data/products";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Carousel } from "@/components/ui/carousel";
@@ -11,7 +11,8 @@ export function ProductSections() {
   return (
     <>
       {productSections.map((section) => {
-        const products = getProductsByCategory(section.categorySlug);
+        const slugs = homepageSectionSlugs[section.categorySlug];
+        const products = slugs ? getProductsBySlugs(slugs) : [];
         if (products.length === 0) return null;
 
         return (

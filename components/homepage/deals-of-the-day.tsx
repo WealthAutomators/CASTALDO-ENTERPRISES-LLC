@@ -1,7 +1,7 @@
 "use client";
 
-import { dealsEndTime } from "@/data/homepage";
-import { getDealProducts } from "@/data/products";
+import { dealsEndTime, homepageDealsSlugs } from "@/data/homepage";
+import { getProductsBySlugs } from "@/data/products";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { CountdownTimer } from "@/components/ui/countdown-timer";
@@ -9,7 +9,7 @@ import { Carousel } from "@/components/ui/carousel";
 import { ProductCard } from "@/components/product/product-card";
 
 export function DealsOfTheDay() {
-  const deals = getDealProducts().slice(0, 8);
+  const deals = getProductsBySlugs(homepageDealsSlugs);
 
   return (
     <section className="py-12 md:py-16">

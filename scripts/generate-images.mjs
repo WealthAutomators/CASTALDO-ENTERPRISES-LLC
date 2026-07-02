@@ -26,7 +26,7 @@ function createLogo() {
   <rect width="180" height="48" fill="transparent"/>
   <circle cx="24" cy="24" r="18" fill="${colors.primary}"/>
   <text x="24" y="24" dominant-baseline="middle" text-anchor="middle" fill="${colors.white}" font-family="Georgia, serif" font-size="16" font-weight="700">O</text>
-  <text x="52" y="20" fill="${colors.primary}" font-family="Georgia, serif" font-size="14" font-weight="700">Ottanwa</text>
+  <text x="52" y="20" fill="${colors.primary}" font-family="Georgia, serif" font-size="14" font-weight="700">Otanwa</text>
   <text x="52" y="36" fill="${colors.accent}" font-family="system-ui, sans-serif" font-size="10" letter-spacing="2">COMMERCE</text>
 </svg>`;
 }
