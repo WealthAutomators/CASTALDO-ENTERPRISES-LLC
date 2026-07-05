@@ -10,60 +10,31 @@ import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
+import { HeaderSearchBar } from "@/components/navbar/header-search-bar";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const { itemCount } = useCart();
   const { wishlist } = useWishlist();
 
   return (
-    <header className="border-b border-border bg-white">
+    <header className="bg-white">
       <Container>
-        <div className="flex h-14 items-center gap-4 lg:h-16">
+        <div className="flex h-16 items-center gap-4 lg:h-[72px] lg:gap-6">
           <Link href="/" className="flex shrink-0 items-center">
             <Image
               src="/logo/logo.svg"
               alt={company.name}
-              width={220}
+              width={240}
               height={44}
               priority
-              className="h-10 w-auto sm:h-11 lg:h-12"
+              className="h-9 w-auto sm:h-10 lg:h-11"
             />
           </Link>
 
-          <nav className="hidden flex-1 justify-center lg:flex">
-            <ul className="flex items-center gap-0.5">
-              {navigationLinks.map((link) => (
-                <li
-                  key={link.href}
-                  className="relative"
-                  onMouseEnter={() => link.children && setActiveDropdown(link.label)}
-                  onMouseLeave={() => setActiveDropdown(null)}
-                >
-                  <Link
-                    href={link.href}
-                    className="rounded-lg px-3 py-2 text-sm font-medium text-foreground/85 transition-colors hover:bg-primary/5 hover:text-primary"
-                  >
-                    {link.label}
-                  </Link>
-                  {link.children && activeDropdown === link.label && (
-                    <div className="absolute left-0 top-full z-50 mt-1 min-w-[210px] rounded-xl border border-border bg-white py-1.5 shadow-lg">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="block px-3 py-2 text-sm text-foreground hover:bg-muted hover:text-primary"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <div className="relative hidden flex-1 lg:block">
+            <HeaderSearchBar />
+          </div>
 
           <div className="ml-auto flex items-center gap-0.5 sm:gap-1">
             <Button variant="ghost" size="icon" asChild className="relative h-9 w-9">
@@ -78,7 +49,7 @@ export function Navbar() {
             </Button>
 
             <Button variant="ghost" size="icon" asChild className="h-9 w-9">
-              <Link href="/profile" aria-label="Log in">
+              <Link href="/profile" aria-label="Account">
                 <User className="h-[18px] w-[18px]" />
               </Link>
             </Button>
@@ -99,6 +70,10 @@ export function Navbar() {
             </Button>
           </div>
         </div>
+
+        <div className="relative pb-3 lg:hidden">
+          <HeaderSearchBar />
+        </div>
       </Container>
 
       {mobileOpen && (
@@ -114,21 +89,6 @@ export function Navbar() {
                   >
                     {link.label}
                   </Link>
-                  {link.children && (
-                    <ul className="ml-3 mt-0.5 space-y-0.5 border-l border-border pl-3">
-                      {link.children.map((child) => (
-                        <li key={child.href}>
-                          <Link
-                            href={child.href}
-                            className="block rounded-lg px-3 py-1.5 text-sm text-muted-foreground hover:bg-muted hover:text-primary"
-                            onClick={() => setMobileOpen(false)}
-                          >
-                            {child.label}
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
                 </li>
               ))}
             </ul>

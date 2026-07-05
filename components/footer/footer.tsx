@@ -12,7 +12,7 @@ export function Footer() {
       <Container className="py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Image src="/logo/logo.svg" alt={company.name} width={220} height={44} className="mb-4 h-11 w-auto" />
+            <Image src="/logo/logo.svg" alt={company.name} width={240} height={44} className="mb-4 h-11 w-auto" />
             <p className="text-sm leading-relaxed text-muted-foreground">{company.description}</p>
             <div className="mt-4 flex gap-3">
               <a href={company.social.instagram} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Instagram">
@@ -28,9 +28,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Company</h3>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Marketplace</h3>
             <ul className="space-y-2.5">
-              {footerLinks.company.map((link) => (
+              {footerLinks.marketplace.map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
                     {link.label}
@@ -41,19 +41,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Customer Care</h3>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Customer Service</h3>
             <ul className="space-y-2.5">
-              {footerLinks.customerCare.map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <h3 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider">Legal</h3>
-            <ul className="space-y-2.5">
-              {footerLinks.legal.map((link) => (
+              {footerLinks.customerService.map((link) => (
                 <li key={link.label}>
                   <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
                     {link.label}
@@ -64,11 +54,21 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Contact</h3>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Policies</h3>
+            <ul className="space-y-2.5">
+              {footerLinks.policies.map((link) => (
+                <li key={link.label}>
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <h3 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider">Contact</h3>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
               <li>
                 {company.address.street}<br />
-                {company.address.city}, {company.address.state} {company.address.zip}
+                {company.address.city}, {company.address.state}
               </li>
               <li>
                 <a href={`mailto:${company.email}`} className="transition-colors hover:text-primary">

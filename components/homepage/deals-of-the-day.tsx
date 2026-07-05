@@ -12,12 +12,12 @@ export function DealsOfTheDay() {
   const deals = getProductsBySlugs(homepageDealsSlugs);
 
   return (
-    <section className="py-12 md:py-16">
+    <section className="bg-accent py-12 md:py-16">
       <Container>
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <SectionHeading title="Flash Deals" className="mb-0" />
+          <SectionHeading title="Flash Sale" className="mb-0 [&_h2]:text-white" />
           <div className="flex items-center gap-3">
-            <span className="text-sm font-medium text-muted-foreground">Ends in:</span>
+            <span className="text-sm font-medium text-white/90">Ends in:</span>
             <CountdownTimer endTime={dealsEndTime} />
           </div>
         </div>

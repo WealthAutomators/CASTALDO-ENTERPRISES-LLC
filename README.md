@@ -1,8 +1,8 @@
-# AAM Partners LLC
+# VALUEBUY PARTNERS LLC
 
 A production-quality, reusable ecommerce storefront template built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-This is the master template for AAM Partners LLC — a general marketplace selling electronics, home essentials, beauty, toys, pet supplies, and more. Duplicate this repository and swap brand assets, colors, and data to launch new stores without rewriting components.
+This is the master template for VALUEBUY PARTNERS LLC — a general marketplace selling electronics, home essentials, beauty, toys, pet supplies, and more. Duplicate this repository and swap brand assets, colors, and data to launch new stores without rewriting components.
 
 ## Tech Stack
 

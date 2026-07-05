@@ -97,6 +97,14 @@ export const categories: Category[] = [
     description: "Products to support your wellness routine.",
     productCount: 2,
   },
+  {
+    id: "13",
+    slug: "gaming",
+    name: "Gaming",
+    image: "/categories/gaming.jpg",
+    description: "Headsets, peripherals, and accessories for every gamer.",
+    productCount: 4,
+  },
 ];
 
 export function getCategoryBySlug(slug: string): Category | undefined {

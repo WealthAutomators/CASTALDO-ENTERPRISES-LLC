@@ -1,40 +1,48 @@
 import { NavLink } from "@/types";
-import { categories } from "./categories";
 
 export const navigationLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/shop" },
-  {
-    label: "Categories",
-    href: "/categories",
-    children: categories.map((c) => ({
-      label: c.name,
-      href: `/categories/${c.slug}`,
-    })),
-  },
+  { label: "Electronics", href: "/categories/electronics" },
+  { label: "Home & Kitchen", href: "/categories/home-kitchen" },
+  { label: "Beauty", href: "/categories/beauty" },
+  { label: "Sports", href: "/categories/sports-outdoors" },
+  { label: "Toys", href: "/categories/toys-games" },
+  { label: "Deals", href: "/shop?sale=true" },
   { label: "New Arrivals", href: "/new-arrivals" },
-  { label: "Best Sellers", href: "/best-sellers" },
-  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
+export const utilityBarLinks = [
+  { label: "Free Shipping on Orders Over $50", href: "/shipping" },
+  { label: "Track Order", href: "/track-order" },
+  { label: "Help Center", href: "/faq" },
+];
+
 export const footerLinks = {
-  company: [
-    { label: "About Us", href: "/about" },
-    { label: "Contact Us", href: "/contact" },
-    { label: "Careers", href: "/contact" },
-    { label: "FAQs", href: "/faq" },
+  marketplace: [
+    { label: "Shop All", href: "/shop" },
+    { label: "Electronics", href: "/categories/electronics" },
+    { label: "Home & Kitchen", href: "/categories/home-kitchen" },
+    { label: "Beauty", href: "/categories/beauty" },
+    { label: "Sports", href: "/categories/sports-outdoors" },
+    { label: "Toys & Games", href: "/categories/toys-games" },
+    { label: "Deals", href: "/shop?sale=true" },
+    { label: "New Arrivals", href: "/new-arrivals" },
   ],
-  customerCare: [
+  customerService: [
+    { label: "Contact Us", href: "/contact" },
     { label: "Track Order", href: "/track-order" },
-    { label: "Returns", href: "/returns" },
+    { label: "FAQs", href: "/faq" },
     { label: "Shipping Policy", href: "/shipping" },
+    { label: "Returns", href: "/returns" },
     { label: "Support", href: "/contact" },
   ],
-  legal: [
+  policies: [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Terms & Conditions", href: "/terms" },
     { label: "Refund Policy", href: "/refund" },
+    { label: "About Us", href: "/about" },
   ],
 };
 

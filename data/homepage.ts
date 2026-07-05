@@ -8,10 +8,10 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Everything Your Home Needs, All in One Place.",
+    headline: "Shop More. Spend Less.",
     description:
-      "Shop electronics, home essentials, toys, beauty products, kitchen accessories and more at prices you'll love.",
-    ctaText: "Shop Collection",
+      "Thousands of quality products at prices you'll love.",
+    ctaText: "Shop Now",
     ctaLink: "/shop",
     secondaryCtaText: "Today's Deals",
     secondaryCtaLink: "/shop?sale=true",
@@ -22,8 +22,8 @@ export const features: Feature[] = [
   {
     id: "1",
     icon: "truck",
-    title: "Fast Shipping",
-    description: "Free shipping on orders over $75. Delivered in 3–5 business days.",
+    title: "Fast Delivery",
+    description: "Free shipping on orders over $50. Most orders arrive in 3–5 business days.",
   },
   {
     id: "2",
@@ -33,21 +33,15 @@ export const features: Feature[] = [
   },
   {
     id: "3",
-    icon: "rotate",
-    title: "Easy Returns",
-    description: "Hassle-free 30-day returns on most items. We make it simple.",
+    icon: "star",
+    title: "Trusted Marketplace",
+    description: "Every product is carefully selected for quality, value, and reliability.",
   },
   {
     id: "4",
-    icon: "headphones",
-    title: "Customer Support",
-    description: "Our friendly team is available Mon–Fri to help with orders and questions.",
-  },
-  {
-    id: "5",
-    icon: "star",
-    title: "Trusted Quality",
-    description: "Every product is carefully selected for quality, value, and reliability.",
+    icon: "rotate",
+    title: "Easy Returns",
+    description: "Hassle-free 30-day returns on most items. We make it simple.",
   },
 ];
 
@@ -60,6 +54,17 @@ export const homepageDealsSlugs = [
   "dog-bed",
   "bath-towel-set",
   "sunglasses-classic",
+] as const;
+
+export const homepageTrendingSlugs = [
+  "wireless-earbuds",
+  "bluetooth-speaker",
+  "air-fryer",
+  "kids-learning-tablet",
+  "yoga-mat",
+  "gaming-headset",
+  "vitamin-c-serum-set",
+  "standing-desk-lamp",
 ] as const;
 
 export const homepageBestsellerSlugs = [
@@ -91,31 +96,18 @@ export const homepageNewArrivalSlugs = [
   "vitamin-c-serum-set",
   "baby-monitor",
   "foam-roller",
+  "rgb-gaming-keyboard",
+  "controller-charging-dock",
 ] as const;
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Upgrade Your Everyday Living",
+  title: "Everyday Savings Across Every Category",
   description:
-    "Discover premium products for every room in your home, from smart electronics to comfortable essentials, all in one place.",
-  buttonText: "Shop Deals",
+    "Shop electronics, home essentials, toys, beauty products and more at unbeatable prices.",
+  buttonText: "Browse Deals",
   buttonLink: "/shop?sale=true",
   image: "/banners/featured.jpg",
-};
-
-export const aboutSection = {
-  title: "Shopping Made Easy.",
-  description:
-    "AAM Partners LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on affordability, reliability, and a smooth shopping experience from browsing to checkout.",
-  checklist: [
-    "Wide selection across 12+ categories",
-    "Competitive prices on everyday essentials",
-    "Fast, reliable shipping nationwide",
-    "Dedicated customer support team",
-  ],
-  buttonText: "Learn More About Us",
-  buttonLink: "/about",
-  image: "/banners/about.jpg",
 };
 
 export const featuredCollection = {
@@ -135,8 +127,9 @@ export const bestSellerTabs = [
 ];
 
 export const newsletter = {
-  title: "Get Exclusive Deals Before Everyone Else",
-  description: "Subscribe for discounts, new arrivals, and weekly offers.",
+  title: "Never Miss Another Deal",
+  description:
+    "Join our newsletter for exclusive offers, discounts and early access to new arrivals.",
   placeholder: "Enter your email address",
   buttonText: "Subscribe",
 };
@@ -148,3 +141,18 @@ export const sortOptions = [
   { value: "price-desc", label: "Price: High to Low" },
   { value: "rating", label: "Top Rated" },
 ];
+
+export const aboutSection = {
+  title: "Shopping Made Easy.",
+  description:
+    "VALUEBUY PARTNERS LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on affordability, reliability, and a smooth shopping experience from browsing to checkout.",
+  checklist: [
+    "Wide selection across 13+ categories",
+    "Competitive prices on everyday essentials",
+    "Fast, reliable shipping nationwide",
+    "Dedicated customer support team",
+  ],
+  buttonText: "Learn More About Us",
+  buttonLink: "/about",
+  image: "/banners/about.jpg",
+};

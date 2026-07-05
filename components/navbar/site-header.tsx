@@ -1,14 +1,15 @@
 "use client";
 
 import { Navbar } from "@/components/navbar/navbar";
-import { SearchBar } from "@/components/navbar/search-bar";
+import { UtilityBar } from "@/components/navbar/utility-bar";
+import { CategoryNav } from "@/components/navbar/category-nav";
 
 export function SiteHeader() {
   return (
     <div className="sticky top-0 z-50 bg-white shadow-sm">
-      <div className="h-1 bg-gradient-to-r from-primary via-primary to-accent" />
+      <UtilityBar />
       <Navbar />
-      <SearchBar />
+      <CategoryNav />
     </div>
   );
 }
