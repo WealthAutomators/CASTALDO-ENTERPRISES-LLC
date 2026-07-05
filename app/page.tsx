@@ -9,7 +9,6 @@ import { AboutSection } from "@/components/homepage/about-section";
 import { NewArrivals } from "@/components/homepage/new-arrivals";
 import { CustomerReviews } from "@/components/homepage/customer-reviews";
 import { Newsletter } from "@/components/homepage/newsletter";
-import { InstagramGallery } from "@/components/homepage/instagram-gallery";
 
 export default function HomePage() {
   return (
@@ -25,7 +24,6 @@ export default function HomePage() {
       <NewArrivals />
       <CustomerReviews />
       <Newsletter />
-      <InstagramGallery />
     </>
   );
 }

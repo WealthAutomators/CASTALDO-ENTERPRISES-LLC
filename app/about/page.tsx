@@ -22,7 +22,7 @@ export default function AboutPage() {
       <Container className="pb-16">
         <div className="grid items-center gap-10 py-12 md:grid-cols-2 lg:gap-16">
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border shadow-sm">
-            <Image src="/banners/about.svg" alt={`About ${company.name}`} fill className="object-cover" sizes="50vw" />
+            <Image src="/banners/about.jpg" alt={`About ${company.name}`} fill className="object-cover" sizes="50vw" />
           </div>
           <PageSection title="Our Story">
             <p>

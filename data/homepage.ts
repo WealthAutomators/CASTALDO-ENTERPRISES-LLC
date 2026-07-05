@@ -1,14 +1,13 @@
 import {
   Feature,
   HeroSlide,
-  InstagramPost,
   PromoBanner,
 } from "@/types";
 
 export const heroSlides: HeroSlide[] = [
   {
     id: "1",
-    image: "/hero/hero-1.svg",
+    image: "/hero/hero-1.jpg",
     headline: "Everything Your Home Needs, All in One Place.",
     description:
       "Shop electronics, home essentials, toys, beauty products, kitchen accessories and more at prices you'll love.",
@@ -101,7 +100,7 @@ export const promotionalBanner: PromoBanner = {
     "Discover premium products for every room in your home, from smart electronics to comfortable essentials, all in one place.",
   buttonText: "Shop Deals",
   buttonLink: "/shop?sale=true",
-  image: "/banners/promo-1.svg",
+  image: "/banners/featured.jpg",
 };
 
 export const aboutSection = {
@@ -116,14 +115,14 @@ export const aboutSection = {
   ],
   buttonText: "Learn More About Us",
   buttonLink: "/about",
-  image: "/banners/about.svg",
+  image: "/banners/about.jpg",
 };
 
 export const featuredCollection = {
   title: "Featured Products",
   description:
     "Hand-picked favorites across electronics, home, beauty, and more — everything you need in one marketplace.",
-  bannerImage: "/banners/featured.svg",
+  bannerImage: "/banners/featured.jpg",
   categorySlug: "electronics",
 };
 
@@ -133,15 +132,6 @@ export const bestSellerTabs = [
   { label: "Home & Kitchen", slug: "home-kitchen" },
   { label: "Beauty", slug: "beauty" },
   { label: "Sports", slug: "sports-outdoors" },
-];
-
-export const instagramPosts: InstagramPost[] = [
-  { id: "1", image: "/instagram/1.svg", alt: "Wireless earbuds and kitchen appliances on display" },
-  { id: "2", image: "/instagram/2.svg", alt: "Home décor and bathroom essentials styled together" },
-  { id: "3", image: "/instagram/3.svg", alt: "Kids toys and educational products" },
-  { id: "4", image: "/instagram/4.svg", alt: "Beauty and personal care products flat lay" },
-  { id: "5", image: "/instagram/5.svg", alt: "Sports gear and outdoor essentials" },
-  { id: "6", image: "/instagram/6.svg", alt: "Office supplies and fashion accessories" },
 ];
 
 export const newsletter = {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Navbar } from "@/components/navbar/navbar";
+import { SiteHeader } from "@/components/navbar/site-header";
 import { Footer } from "@/components/footer/footer";
 import { Providers } from "@/components/providers/Providers";
 import { company } from "@/data/company";
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-white">
         <Providers>
-          <Navbar />
+          <SiteHeader />
           <main className="flex-1">{children}</main>
           <Footer />
         </Providers>
