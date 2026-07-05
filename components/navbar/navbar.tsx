@@ -21,8 +21,15 @@ export function Navbar() {
     <header className="border-b border-border bg-white">
       <Container>
         <div className="flex h-14 items-center gap-4 lg:h-16">
-          <Link href="/" className="shrink-0">
-            <Image src="/logo/logo.svg" alt={company.name} width={150} height={40} priority className="h-8 w-auto lg:h-9" />
+          <Link href="/" className="flex shrink-0 items-center">
+            <Image
+              src="/logo/logo.svg"
+              alt={company.name}
+              width={220}
+              height={44}
+              priority
+              className="h-10 w-auto sm:h-11 lg:h-12"
+            />
           </Link>
 
           <nav className="hidden flex-1 justify-center lg:flex">

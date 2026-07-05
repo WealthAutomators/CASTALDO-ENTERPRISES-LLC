@@ -23,8 +23,8 @@ export function HeroBanner() {
               priority={slide.id === "1"}
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/55 to-primary/10" />
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(245,158,11,0.25),transparent_55%)]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/50 via-primary/30 to-transparent" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(245,158,11,0.12),transparent_55%)]" />
             <Container className="relative flex h-full items-center">
               <motion.div
                 className="max-w-xl text-white"

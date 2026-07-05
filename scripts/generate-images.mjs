@@ -22,12 +22,18 @@ function createSvg(width, height, bg, label, sublabel = "", textColor = colors.p
 }
 
 function createLogo() {
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="200" height="48" viewBox="0 0 200 48">
-  <rect width="200" height="48" fill="transparent"/>
-  <circle cx="24" cy="24" r="18" fill="${colors.primary}"/>
-  <text x="24" y="24" dominant-baseline="middle" text-anchor="middle" fill="${colors.white}" font-family="system-ui, sans-serif" font-size="14" font-weight="700">A</text>
-  <text x="52" y="20" fill="${colors.primary}" font-family="system-ui, sans-serif" font-size="13" font-weight="700">AAM Partners</text>
-  <text x="52" y="36" fill="${colors.accent}" font-family="system-ui, sans-serif" font-size="9" letter-spacing="1.5">LLC</text>
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="220" height="44" viewBox="0 0 220 44" fill="none">
+  <defs>
+    <linearGradient id="logo-mark-bg" x1="2" y1="2" x2="38" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#6D28D9"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="2" width="40" height="40" rx="10" fill="url(#logo-mark-bg)"/>
+  <rect x="6" y="30" width="28" height="3.5" rx="1.75" fill="${colors.accent}"/>
+  <text x="20" y="21" text-anchor="middle" dominant-baseline="middle" fill="${colors.white}" font-family="system-ui, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.7">AAM</text>
+  <text x="50" y="19" fill="#6D28D9" font-family="system-ui, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4">AAM Partners</text>
+  <text x="50" y="34" fill="${colors.accent}" font-family="system-ui, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">LLC</text>
 </svg>`;
 }
 

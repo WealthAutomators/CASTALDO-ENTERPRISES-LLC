@@ -65,7 +65,7 @@ components/
   homepage/           # Homepage sections
   product/            # Product cards, gallery, quick view
   cart/               # Cart page
-  checkout/           # Demo checkout
+  checkout/           # Checkout flow
   shop/               # Shop with filters
   ui/                 # Reusable UI primitives
 data/                 # All store content (JSON-like TS files)
@@ -86,15 +86,15 @@ types/                # TypeScript interfaces
 - Quick view modal on product cards
 - Product detail page with gallery, accordion, related products
 - Shop page with sidebar filters, sorting, and pagination
-- Demo checkout (no payment processing)
+- Checkout with order summary and payment form
 - Fully responsive (mobile, tablet, desktop)
 - 26 products across 6 categories
 
-## Demo Checkout
+## Checkout
 
-The checkout page displays **"Demo Checkout"** — no payment is processed. Use coupon code `SAVE10` on the cart page for a 10% discount demo.
+Use coupon code `SAVE10` on the cart page for a 10% discount.
 
 ## Brand Colors
 
-- **Primary:** Deep Green `#1B4332`
-- **Accent:** Gold `#C9A227`
+- **Primary:** Royal Purple `#7C3AED`
+- **Accent:** Amber `#F59E0B`

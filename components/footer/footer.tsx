@@ -12,7 +12,7 @@ export function Footer() {
       <Container className="py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Image src="/logo/logo.svg" alt={company.name} width={180} height={48} className="mb-4" />
+            <Image src="/logo/logo.svg" alt={company.name} width={220} height={44} className="mb-4 h-11 w-auto" />
             <p className="text-sm leading-relaxed text-muted-foreground">{company.description}</p>
             <div className="mt-4 flex gap-3">
               <a href={company.social.instagram} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Instagram">
