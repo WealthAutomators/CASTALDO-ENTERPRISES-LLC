@@ -18,10 +18,14 @@ export function HeroBanner() {
         alt={slide.headline}
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[72%_center]"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/40" />
+      {/* Soft full-frame dim */}
+      <div className="absolute inset-0 bg-black/35" />
+      {/* Strong left scrim behind copy + nav for guaranteed contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-black/25" />
 
       <Container className="relative flex h-full items-end pb-16 pt-28 md:pb-20 lg:pb-24">
         <motion.div
@@ -30,13 +34,13 @@ export function HeroBanner() {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
           className="max-w-xl"
         >
-          <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.22em] text-white/70">
+          <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.22em] text-white/75">
             {company.name}
           </p>
           <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
             {slide.headline}
           </h1>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
+          <p className="mt-5 max-w-md text-base leading-relaxed text-white/90 sm:text-lg">
             {slide.description}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
