@@ -13,7 +13,7 @@ export const testimonials: Testimonial[] = [
     name: "Greg Mallory",
     rating: 5,
     text: "Needed a new air fryer and a towel set. One checkout, one box, done. Packaging was clean and both items look/feel better than what I paid last year at a big box store.",
-    location: "Vero Beach, FL",
+    location: "Princeton, NJ",
   },
   {
     id: "3",
@@ -82,7 +82,7 @@ export const testimonials: Testimonial[] = [
     id: "12",
     name: "Jamal Wright",
     rating: 5,
-    text: "Jummy Ventures felt like a real store, not a random dropship site. STEM robot kit for my nephew was a hit, and the return policy copy actually made me trust the order.",
+    text: "Castaldo Enterprises felt like a real store, not a random dropship site. STEM robot kit for my nephew was a hit, and the return policy copy actually made me trust the order.",
     location: "Chicago, IL",
   },
 ];

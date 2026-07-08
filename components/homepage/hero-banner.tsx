@@ -12,64 +12,49 @@ export function HeroBanner() {
   const slide = heroSlides[0];
 
   return (
-    <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-[#FEE2E2] via-[#FAFAFA] to-white">
-      <div className="absolute -right-20 top-10 h-64 w-64 rounded-full bg-secondary/20 blur-3xl" />
-      <div className="absolute -left-16 bottom-0 h-48 w-48 rounded-full bg-primary/10 blur-3xl" />
-      <Container className="relative py-10 md:py-14 lg:py-16">
-        <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="order-2 lg:order-1"
-          >
-            <span className="inline-block rounded-xl bg-secondary px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-secondary-foreground shadow-sm">
-              {company.tagline}
-            </span>
-            <h1 className="mt-4 whitespace-pre-line text-3xl font-bold leading-tight text-foreground sm:text-4xl lg:text-5xl">
-              {slide.headline}
-            </h1>
-            <p className="mt-3 max-w-lg text-base text-muted-foreground sm:text-lg">
-              {slide.description}
-            </p>
-            <div className="mt-6 flex flex-wrap gap-3">
-              <Button asChild size="lg">
-                <Link href={slide.ctaLink}>{slide.ctaText}</Link>
-              </Button>
-              {slide.secondaryCtaText && slide.secondaryCtaLink && (
-                <Button asChild size="lg" variant="outline">
-                  <Link href={slide.secondaryCtaLink}>{slide.secondaryCtaText}</Link>
-                </Button>
-              )}
-            </div>
-          </motion.div>
+    <section className="relative h-[90vh] min-h-[560px] w-full overflow-hidden bg-primary">
+      <Image
+        src={slide.image}
+        alt={slide.headline}
+        fill
+        priority
+        className="object-cover"
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/20" />
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="relative order-1 lg:order-2"
-          >
-            <div className="relative aspect-[4/3] overflow-hidden rounded-xl border border-border bg-white shadow-md lg:aspect-[5/4]">
-              <Image
-                src={slide.image}
-                alt={slide.headline.replace("\n", " ")}
-                fill
-                className="object-cover"
-                priority
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-            <motion.div
-              initial={{ opacity: 0, scale: 0.85, y: 8 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              transition={{ duration: 0.45, delay: 0.35 }}
-              className="absolute -right-2 -top-2 rounded-xl bg-secondary px-4 py-2 text-sm font-bold text-secondary-foreground shadow-lg sm:-right-4 sm:-top-4 sm:px-5 sm:py-2.5 sm:text-base"
-            >
-              Up to 30% Off
-            </motion.div>
-          </motion.div>
-        </div>
+      <Container className="relative flex h-full items-end pb-16 pt-28 md:pb-20 lg:pb-24">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="max-w-xl"
+        >
+          <p className="mb-4 text-[11px] font-medium uppercase tracking-[0.22em] text-white/70">
+            {company.name}
+          </p>
+          <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {slide.headline}
+          </h1>
+          <p className="mt-5 max-w-md text-base leading-relaxed text-white/80 sm:text-lg">
+            {slide.description}
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button asChild size="lg" className="min-w-[160px] bg-white text-primary hover:bg-secondary hover:text-white">
+              <Link href={slide.ctaLink}>{slide.ctaText}</Link>
+            </Button>
+            {slide.secondaryCtaText && slide.secondaryCtaLink && (
+              <Button
+                asChild
+                size="lg"
+                variant="outline"
+                className="min-w-[160px] border-white/50 bg-transparent text-white hover:border-white hover:bg-white hover:text-primary"
+              >
+                <Link href={slide.secondaryCtaLink}>{slide.secondaryCtaText}</Link>
+              </Button>
+            )}
+          </div>
+        </motion.div>
       </Container>
     </section>
   );

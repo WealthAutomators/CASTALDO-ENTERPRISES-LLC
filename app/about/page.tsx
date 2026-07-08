@@ -26,16 +26,16 @@ export default function AboutPage() {
           </div>
           <PageSection title="Our Story">
             <p>
-              JUMMY VENTURES LLC was founded with a simple mission: make online shopping easier for
-              families by bringing together quality products across every category in one trusted
-              marketplace. From electronics and home essentials to toys, beauty, and gaming gear —
-              we curate products that deliver real value.
+              CASTALDO ENTERPRISES LLC was founded with a simple mission: elevate everyday living
+              through thoughtfully curated products across every category in one refined
+              marketplace. From electronics and home essentials to beauty, fashion, and lifestyle
+              pieces — we select items that balance form, function, and lasting quality.
             </p>
             <p className="mt-4">
-              Based in Vero Beach, Florida, we work with reliable suppliers to offer fair
-              prices without compromising on quality. Every product in our catalog is selected with
-              care, and our team is dedicated to making your shopping experience smooth from browsing
-              to checkout.
+              Based in Howell, New Jersey, we partner with trusted suppliers to offer premium
+              products without compromise. Every piece in our catalog is chosen with intention, and
+              our team is dedicated to making your shopping experience calm, clear, and considered
+              from browsing to checkout.
             </p>
           </PageSection>
         </div>

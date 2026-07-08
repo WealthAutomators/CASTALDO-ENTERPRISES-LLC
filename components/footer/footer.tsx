@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Globe, Share2, Users } from "lucide-react";
 import { company } from "@/data/company";
 import { footerLinks, paymentMethods } from "@/data/navigation";
 import { Container } from "@/components/ui/container";
@@ -8,31 +7,33 @@ import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-card">
-      <Container className="py-12">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <Image src="/logo/logo.svg" alt={company.name} width={268} height={44} className="mb-4 h-11 w-auto" />
-            <p className="text-sm leading-relaxed text-muted-foreground">{company.description}</p>
-            <div className="mt-4 flex gap-3">
-              <a href={company.social.facebook} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Facebook">
-                <Users className="h-5 w-5" />
-              </a>
-              <a href={company.social.twitter} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Twitter">
-                <Globe className="h-5 w-5" />
-              </a>
-              <a href={company.social.pinterest} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Pinterest">
-                <Share2 className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
+    <footer className="border-t border-border bg-white">
+      <Container className="py-20 md:py-24">
+        <div className="mb-16">
+          <Image
+            src="/logo/logo.svg"
+            alt={company.name}
+            width={280}
+            height={48}
+            className="h-10 w-auto"
+          />
+          <p className="mt-5 max-w-md text-sm leading-relaxed text-muted-foreground md:text-base">
+            {company.tagline}
+          </p>
+        </div>
 
+        <div className="grid gap-12 sm:grid-cols-3 lg:gap-20">
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Shop</h3>
-            <ul className="space-y-2.5">
-              {footerLinks.marketplace.map((link) => (
+            <h3 className="mb-6 text-[11px] font-medium uppercase tracking-[0.2em] text-foreground">
+              Shop
+            </h3>
+            <ul className="space-y-3.5">
+              {footerLinks.shop.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-teal">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-secondary"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -41,11 +42,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Customer Care</h3>
-            <ul className="space-y-2.5">
-              {footerLinks.customerService.map((link) => (
+            <h3 className="mb-6 text-[11px] font-medium uppercase tracking-[0.2em] text-foreground">
+              Support
+            </h3>
+            <ul className="space-y-3.5">
+              {footerLinks.support.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-teal">
+                  <Link
+                    href={link.href}
+                    className="text-sm text-muted-foreground transition-colors hover:text-secondary"
+                  >
                     {link.label}
                   </Link>
                 </li>
@@ -54,24 +60,30 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Policies</h3>
-            <ul className="space-y-2.5">
-              {footerLinks.policies.map((link) => (
+            <h3 className="mb-6 text-[11px] font-medium uppercase tracking-[0.2em] text-foreground">
+              Contact
+            </h3>
+            <ul className="space-y-3.5 text-sm text-muted-foreground">
+              {footerLinks.contact.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-teal">
+                  <Link
+                    href={link.href}
+                    className="transition-colors hover:text-secondary"
+                  >
                     {link.label}
                   </Link>
                 </li>
               ))}
-            </ul>
-            <h3 className="mb-4 mt-8 text-sm font-semibold uppercase tracking-wider">Contact</h3>
-            <ul className="space-y-2.5 text-sm text-muted-foreground">
-              <li>
-                {company.address.street}<br />
+              <li className="pt-2">
+                {company.address.street}
+                <br />
                 {company.address.city}, {company.address.state}
               </li>
               <li>
-                <a href={`mailto:${company.email}`} className="transition-colors hover:text-teal">
+                <a
+                  href={`mailto:${company.email}`}
+                  className="transition-colors hover:text-secondary"
+                >
                   {company.email}
                 </a>
               </li>
@@ -82,11 +94,17 @@ export function Footer() {
 
       <Separator />
 
-      <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
+      <Container className="flex flex-col items-center justify-between gap-4 py-8 sm:flex-row">
         <p className="text-sm text-muted-foreground">{company.copyright}</p>
         <div className="flex items-center gap-2">
           {paymentMethods.map((method) => (
-            <Image key={method.name} src={method.icon} alt={method.name} width={40} height={28} />
+            <Image
+              key={method.name}
+              src={method.icon}
+              alt={method.name}
+              width={40}
+              height={28}
+            />
           ))}
         </div>
       </Container>

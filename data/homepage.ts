@@ -8,13 +8,13 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Everything You Love.\nOne Trusted Store.",
+    headline: "Elevate Everyday Living.",
     description:
-      "Shop electronics, home essentials, beauty products, toys, fashion and more with confidence.",
-    ctaText: "Shop Collection",
+      "Discover thoughtfully selected products for every room, every lifestyle and every season.",
+    ctaText: "Explore Collection",
     ctaLink: "/shop",
-    secondaryCtaText: "Today's Deals",
-    secondaryCtaLink: "/shop?sale=true",
+    secondaryCtaText: "New Arrivals",
+    secondaryCtaLink: "/new-arrivals",
   },
 ];
 
@@ -22,25 +22,25 @@ export const features: Feature[] = [
   {
     id: "1",
     icon: "truck",
-    title: "Fast Delivery",
+    title: "Complimentary Shipping",
     description: "Free shipping on orders over $75. Most orders arrive in 3–5 business days.",
   },
   {
     id: "2",
     icon: "shield",
-    title: "Secure Payments",
+    title: "Secure Checkout",
     description: "Your payment details are protected with industry-standard encryption.",
   },
   {
     id: "3",
     icon: "star",
-    title: "Premium Quality",
-    description: "Every product is carefully selected for quality, value, and lasting reliability.",
+    title: "Curated Quality",
+    description: "Every product is carefully selected for craftsmanship, design, and lasting value.",
   },
   {
     id: "4",
     icon: "rotate",
-    title: "Easy Returns",
+    title: "Effortless Returns",
     description: "Hassle-free 30-day returns on most items. We make it simple.",
   },
 ];
@@ -48,33 +48,42 @@ export const features: Feature[] = [
 export const featuredCollections = [
   {
     id: "1",
-    title: "Tech & Electronics",
-    subtitle: "Audio, gadgets & smart gear",
-    href: "/categories/electronics",
-    image: "/categories/electronics.jpg",
-  },
-  {
-    id: "2",
-    title: "Home & Kitchen",
-    subtitle: "Essentials for everyday living",
+    title: "Modern Living",
+    subtitle: "Refined pieces for contemporary spaces",
     href: "/categories/home-kitchen",
     image: "/categories/home-kitchen.jpg",
   },
   {
+    id: "2",
+    title: "Smart Home",
+    subtitle: "Intelligent design for connected living",
+    href: "/categories/electronics",
+    image: "/categories/electronics.jpg",
+  },
+  {
     id: "3",
-    title: "Beauty & Wellness",
-    subtitle: "Skincare & self-care favorites",
-    href: "/categories/beauty",
-    image: "/categories/beauty.jpg",
+    title: "Weekend Essentials",
+    subtitle: "Elevated comfort for leisure hours",
+    href: "/categories/sports-outdoors",
+    image: "/categories/sports-outdoors.jpg",
   },
   {
     id: "4",
-    title: "Play & Learn",
-    subtitle: "Toys, games & educational fun",
+    title: "Family Favorites",
+    subtitle: "Thoughtful finds for every generation",
     href: "/categories/toys-games",
     image: "/categories/toys-games.jpg",
   },
 ];
+
+export const editorialBanner = {
+  title: "A quieter way to shop.",
+  description:
+    "Less noise. More intention. Explore collections shaped around how you actually live — not the latest trend cycle.",
+  ctaText: "View Collections",
+  ctaLink: "/categories",
+  image: "/banners/featured.jpg",
+};
 
 export const dealsEndTime = new Date(Date.now() + 1000 * 60 * 60 * 18).toISOString();
 
@@ -133,10 +142,10 @@ export const homepageNewArrivalSlugs = [
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Everything Your Home And Family Needs",
+  title: "Quality Without Compromise",
   description:
-    "Discover quality products across every category with prices you'll appreciate every day.",
-  buttonText: "Start Shopping",
+    "Premium materials. Thoughtful design. Products chosen to last — not just to fill a cart.",
+  buttonText: "Browse Products",
   buttonLink: "/shop",
   image: "/banners/featured.jpg",
 };
@@ -144,7 +153,7 @@ export const promotionalBanner: PromoBanner = {
 export const featuredCollection = {
   title: "Featured Products",
   description:
-    "Hand-picked favorites across electronics, home, beauty, and more — everything you need in one place.",
+    "Hand-selected pieces across electronics, home, beauty, and more — curated for modern living.",
   bannerImage: "/banners/featured.jpg",
   categorySlug: "electronics",
 };
@@ -158,9 +167,9 @@ export const bestSellerTabs = [
 ];
 
 export const newsletter = {
-  title: "Get Exclusive Deals Delivered To You",
+  title: "Stay Inspired.",
   description:
-    "Subscribe to receive special offers, new arrivals and exclusive member discounts.",
+    "Join our newsletter for exclusive launches, seasonal collections and special offers.",
   placeholder: "Enter your email address",
   buttonText: "Subscribe",
 };
@@ -174,16 +183,16 @@ export const sortOptions = [
 ];
 
 export const aboutSection = {
-  title: "Shopping Made Easy.",
+  title: "Designed Around Your Everyday.",
   description:
-    "JUMMY VENTURES LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on quality, reliability, and a smooth shopping experience from browsing to checkout.",
+    "CASTALDO ENTERPRISES LLC exists for people who want their homes — and their routines — to feel considered. We curate electronics, home essentials, beauty, fashion, and lifestyle pieces that balance form with function, so modern living feels effortless rather than overcrowded.",
   checklist: [
-    "Wide selection across 13+ categories",
-    "Competitive prices on everyday essentials",
-    "Fast, reliable shipping nationwide",
-    "Dedicated customer support team",
+    "Editorially curated across every category",
+    "Quality-first selection over endless inventory",
+    "Spaces designed for calm, clarity, and comfort",
+    "A shopping experience built around intention",
   ],
-  buttonText: "Learn More About Us",
-  buttonLink: "/about",
+  buttonText: "Shop Now",
+  buttonLink: "/shop",
   image: "/banners/about.jpg",
 };

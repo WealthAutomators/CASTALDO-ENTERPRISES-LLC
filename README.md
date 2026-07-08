@@ -1,8 +1,8 @@
-# JUMMY VENTURES LLC
+# CASTALDO ENTERPRISES LLC
 
-Next.js ecommerce storefront for **JUMMY VENTURES LLC**.
+Next.js ecommerce storefront for **CASTALDO ENTERPRISES LLC**.
 
-JUMMY VENTURES LLC — *Everyday Shopping, Elevated.* — is a general online marketplace selling electronics, home essentials, beauty, toys, pet supplies, sports gear, and more. Brand assets, colors, copy, and product data are data-driven, so the storefront can be re-themed without rewriting components.
+CASTALDO ENTERPRISES LLC — *Curated Products For Modern Living.* — is a premium lifestyle marketplace for electronics, home essentials, beauty, fashion, and more. Brand assets, colors, copy, and product data are data-driven, so the storefront can be re-themed without rewriting components.
 
 ## Stack
 

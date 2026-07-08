@@ -2,9 +2,9 @@ import { company } from "./company";
 
 export const faqItems = [
   {
-    question: "What types of products does JUMMY VENTURES LLC sell?",
+    question: `What types of products does ${company.name} sell?`,
     answer:
-      "We offer a wide range of products across 12+ categories including electronics, home & kitchen, bathroom essentials, beauty & personal care, toys & games, pet supplies, sports & outdoors, office supplies, health & wellness, baby products, and fashion accessories.",
+      "We offer a curated range of products across electronics, home & kitchen, bathroom essentials, beauty & personal care, toys & games, pet supplies, sports & outdoors, office supplies, health & wellness, baby products, and fashion accessories — selected for modern living.",
   },
   {
     question: "Do you offer free shipping?",
@@ -34,7 +34,7 @@ export const faqItems = [
   {
     question: "Are your products quality-checked?",
     answer:
-      "Absolutely. We partner with trusted suppliers and carefully curate every product in our marketplace. Each item is selected for quality, value, and reliability before being listed on our site.",
+      "Absolutely. We partner with trusted suppliers and carefully curate every product in our marketplace. Each item is selected for quality, design, and reliability before being listed on our site.",
   },
   {
     question: "How do I use a coupon code?",
@@ -48,14 +48,13 @@ export const faqItems = [
   },
   {
     question: "How can I contact customer support?",
-    answer:
-      `Our support team is available Monday through Friday, 9am–6pm EST. Email us at ${company.email} or use the contact form on our website. We typically respond within one business day.`,
+    answer: `Our support team is available Monday through Friday, 9am–6pm EST. Email us at ${company.email} or use the contact form on our website. We typically respond within one business day.`,
   },
 ];
 
 export const shippingPolicy = {
   title: "Shipping Policy",
-  description: "Everything you need to know about how we deliver your JUMMY VENTURES LLC orders.",
+  description: `Everything you need to know about how we deliver your ${company.name} orders.`,
   sections: [
     {
       title: "Processing Time",
@@ -90,7 +89,7 @@ export const shippingPolicy = {
 
 export const returnPolicy = {
   title: "Return Policy",
-  description: "We want you to love every JUMMY VENTURES LLC purchase. If you're not satisfied, we're here to help.",
+  description: `We want you to love every ${company.name} purchase. If you're not satisfied, we're here to help.`,
   sections: [
     {
       title: "30-Day Return Window",
@@ -128,7 +127,7 @@ export const returnPolicy = {
 
 export const refundPolicy = {
   title: "Refund Policy",
-  description: "Our commitment to fair and transparent refunds for every JUMMY VENTURES LLC order.",
+  description: `Our commitment to fair and transparent refunds for every ${company.name} order.`,
   sections: [
     {
       title: "Refund Eligibility",
@@ -163,7 +162,7 @@ export const refundPolicy = {
 
 export const privacyPolicy = {
   title: "Privacy Policy",
-  description: "Last updated: January 1, 2026. How JUMMY VENTURES LLC collects, uses, and protects your information.",
+  description: `Last updated: January 1, 2026. How ${company.name} collects, uses, and protects your information.`,
   sections: [
     {
       title: "Information We Collect",
@@ -195,7 +194,9 @@ export const privacyPolicy = {
     {
       title: "Your Rights",
       content:
-        "You may request access to, correction of, or deletion of your personal data at any time by contacting us at " + company.email + ". Florida residents have additional rights under applicable state privacy laws.",
+        "You may request access to, correction of, or deletion of your personal data at any time by contacting us at " +
+        company.email +
+        ". New Jersey residents have additional rights under applicable state privacy laws.",
     },
     {
       title: "Contact",
@@ -206,12 +207,11 @@ export const privacyPolicy = {
 
 export const termsPolicy = {
   title: "Terms & Conditions",
-  description: "Please read these terms carefully before using the JUMMY VENTURES LLC website.",
+  description: `Please read these terms carefully before using the ${company.name} website.`,
   sections: [
     {
       title: "Acceptance of Terms",
-      content:
-        "By accessing and using the JUMMY VENTURES LLC website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website.",
+      content: `By accessing and using the ${company.name} website, you agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website.`,
     },
     {
       title: "Products & Pricing",
@@ -225,18 +225,16 @@ export const termsPolicy = {
     },
     {
       title: "Intellectual Property",
-      content:
-        "All content on this website — including text, images, logos, and design — is the property of JUMMY VENTURES LLC and protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.",
+      content: `All content on this website — including text, images, logos, and design — is the property of ${company.name} and protected by copyright and trademark laws. You may not reproduce, distribute, or use our content without written permission.`,
     },
     {
       title: "Limitation of Liability",
-      content:
-        "JUMMY VENTURES LLC shall not be liable for any indirect, incidental, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the product in question.",
+      content: `${company.name} shall not be liable for any indirect, incidental, or consequential damages arising from your use of our website or products. Our total liability shall not exceed the amount you paid for the product in question.`,
     },
     {
       title: "Governing Law",
       content:
-        "These terms are governed by the laws of the State of Florida, United States. Any disputes shall be resolved in the courts of Vero Beach, Florida.",
+        "These terms are governed by the laws of the State of New Jersey, United States. Any disputes shall be resolved in the courts of Howell, New Jersey.",
     },
   ],
 };

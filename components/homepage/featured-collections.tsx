@@ -2,48 +2,54 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 import { featuredCollections } from "@/data/homepage";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 
 export function FeaturedCollections() {
   return (
-    <section className="py-10 md:py-14">
+    <section className="py-20 md:py-28">
       <Container>
         <SectionHeading
           title="Featured Collections"
-          subtitle="Curated edits across the categories our customers love most."
+          subtitle="Four editorial edits spanning modern living, smart home, weekends, and family life."
           centered
         />
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:gap-6">
-          {featuredCollections.map((collection) => (
-            <Link
+        <div className="mt-4 grid gap-5 md:grid-cols-2 lg:gap-6">
+          {featuredCollections.map((collection, index) => (
+            <motion.div
               key={collection.id}
-              href={collection.href}
-              className="group relative overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
             >
-              <div className="relative aspect-[4/5] overflow-hidden">
+              <Link
+                href={collection.href}
+                className="group relative block aspect-[16/10] overflow-hidden rounded-[6px] bg-muted"
+              >
                 <Image
                   src={collection.image}
                   alt={collection.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/85 via-primary/25 to-transparent transition-opacity duration-300 group-hover:from-primary/90" />
-                <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
-                  <h3 className="text-base font-semibold text-white drop-shadow md:text-lg">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
+                  <h3 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">
                     {collection.title}
                   </h3>
-                  <p className="mt-0.5 text-xs text-white/85 md:text-sm">{collection.subtitle}</p>
-                  <span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-secondary">
-                    Shop now
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+                  <p className="mt-2 max-w-sm text-sm text-white/80 md:text-base">
+                    {collection.subtitle}
+                  </p>
+                  <span className="mt-4 inline-block text-xs font-medium uppercase tracking-[0.16em] text-secondary transition-colors group-hover:text-accent">
+                    Explore
                   </span>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </Container>

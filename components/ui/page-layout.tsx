@@ -17,11 +17,11 @@ interface PageHeroProps {
 export function PageHero({ title, description, breadcrumbs }: PageHeroProps) {
   return (
     <div className="border-b border-border bg-muted/30">
-      <Container className="py-6 md:py-8">
+      <Container className="py-8 md:py-10">
         <nav aria-label="Breadcrumb" className="mb-4">
           <ol className="flex flex-wrap items-center gap-1.5 text-sm text-muted-foreground">
             <li>
-              <Link href="/" className="flex items-center gap-1 transition-colors hover:text-primary">
+              <Link href="/" className="flex items-center gap-1 transition-colors hover:text-secondary">
                 <Home className="h-3.5 w-3.5" />
                 <span className="sr-only sm:not-sr-only">Home</span>
               </Link>
@@ -30,7 +30,7 @@ export function PageHero({ title, description, breadcrumbs }: PageHeroProps) {
               <li key={index} className="flex items-center gap-1.5">
                 <ChevronRight className="h-3.5 w-3.5 shrink-0" />
                 {item.href ? (
-                  <Link href={item.href} className="transition-colors hover:text-primary">
+                  <Link href={item.href} className="transition-colors hover:text-secondary">
                     {item.label}
                   </Link>
                 ) : (

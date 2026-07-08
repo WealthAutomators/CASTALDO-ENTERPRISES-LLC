@@ -1,21 +1,21 @@
 export const company = {
-  name: "JUMMY VENTURES LLC",
-  tagline: "Everyday Shopping, Elevated.",
+  name: "CASTALDO ENTERPRISES LLC",
+  tagline: "Curated Products For Modern Living.",
   description:
-    "JUMMY VENTURES LLC is your trusted online marketplace for electronics, home essentials, beauty, toys, sports gear, and more — quality products that elevate everyday living at prices you'll appreciate.",
-  email: "jummyventuresllc@gmail.com",
+    "CASTALDO ENTERPRISES LLC is a curated lifestyle marketplace offering thoughtfully selected products for every room, every lifestyle, and every season — premium quality with an editorial sensibility.",
+  email: "castaldoenterprisesllc@gmail.com",
   address: {
-    street: "4210 14TH ST",
-    city: "VERO BEACH",
-    state: "FL",
+    street: "12 HEDGEWOOD RD",
+    city: "HOWELL",
+    state: "NJ",
     zip: "",
     country: "United States",
   },
   social: {
-    facebook: "https://facebook.com/jummyventuresllc",
-    twitter: "https://twitter.com/jummyventuresllc",
-    pinterest: "https://pinterest.com/jummyventuresllc",
+    facebook: "https://facebook.com/castaldoenterprisesllc",
+    twitter: "https://twitter.com/castaldoenterprisesllc",
+    pinterest: "https://pinterest.com/castaldoenterprisesllc",
   },
   hours: "Mon–Fri: 9am–6pm EST",
-  copyright: `© ${new Date().getFullYear()} JUMMY VENTURES LLC. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} CASTALDO ENTERPRISES LLC. All rights reserved.`,
 };

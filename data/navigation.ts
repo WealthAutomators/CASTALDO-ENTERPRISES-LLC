@@ -1,43 +1,58 @@
 import { NavLink } from "@/types";
 
-export const navigationLinks: NavLink[] = [
-  { label: "Home", href: "/" },
+export const leftNavLinks: NavLink[] = [
   { label: "Shop", href: "/shop" },
-  { label: "Departments", href: "/categories" },
-  { label: "Best Sellers", href: "/best-sellers" },
-  { label: "New Arrivals", href: "/new-arrivals" },
-  { label: "Deals", href: "/shop?sale=true" },
-  { label: "Brands", href: "/shop" },
+  { label: "Collections", href: "/categories" },
+  { label: "New", href: "/new-arrivals" },
+];
+
+export const rightNavLinks: NavLink[] = [
+  { label: "About", href: "/about" },
+  { label: "Support", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
-export const announcementText = "Free Shipping On Orders Over $75 · Weekly Specials Inside";
+/** Combined links for mobile menu and any legacy consumers */
+export const navigationLinks: NavLink[] = [...leftNavLinks, ...rightNavLinks];
 
-export const utilityBarLinks = [
-  { label: "Free Shipping", href: "/shipping" },
-  { label: "Weekly Specials", href: "/shop?sale=true" },
-  { label: "Gift Cards", href: "/shop" },
-  { label: "Track Order", href: "/track-order" },
-];
+export const announcementText = "";
+
+export const utilityBarLinks: { label: string; href: string }[] = [];
 
 export const footerLinks = {
-  marketplace: [
+  shop: [
     { label: "Shop All", href: "/shop" },
-    { label: "Departments", href: "/categories" },
+    { label: "Collections", href: "/categories" },
+    { label: "New Arrivals", href: "/new-arrivals" },
+    { label: "Best Sellers", href: "/best-sellers" },
     { label: "Electronics", href: "/categories/electronics" },
     { label: "Home & Kitchen", href: "/categories/home-kitchen" },
-    { label: "Beauty", href: "/categories/beauty" },
-    { label: "Deals", href: "/shop?sale=true" },
+  ],
+  support: [
+    { label: "FAQs", href: "/faq" },
+    { label: "Shipping", href: "/shipping" },
+    { label: "Returns", href: "/returns" },
+    { label: "Refund Policy", href: "/refund" },
+    { label: "Track Order", href: "/track-order" },
+    { label: "Privacy", href: "/privacy" },
+    { label: "Terms", href: "/terms" },
+  ],
+  contact: [
+    { label: "Contact Us", href: "/contact" },
+    { label: "About Us", href: "/about" },
+  ],
+  /** Kept for backwards compatibility with any remaining references */
+  marketplace: [
+    { label: "Shop All", href: "/shop" },
+    { label: "Collections", href: "/categories" },
     { label: "New Arrivals", href: "/new-arrivals" },
     { label: "Best Sellers", href: "/best-sellers" },
   ],
   customerService: [
-    { label: "Contact Us", href: "/contact" },
-    { label: "Track Order", href: "/track-order" },
     { label: "FAQs", href: "/faq" },
-    { label: "Shipping Policy", href: "/shipping" },
+    { label: "Shipping", href: "/shipping" },
     { label: "Returns", href: "/returns" },
-    { label: "Support", href: "/contact" },
+    { label: "Track Order", href: "/track-order" },
   ],
   policies: [
     { label: "Privacy Policy", href: "/privacy" },

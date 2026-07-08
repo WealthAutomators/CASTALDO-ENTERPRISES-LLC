@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/navbar/site-header";
 import { Footer } from "@/components/footer/footer";
 import { Providers } from "@/components/providers/Providers";
 import { company } from "@/data/company";
 
-const inter = Inter({
-  variable: "--font-inter",
+const manrope = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
-const siteUrl = "https://jummyventuresllc.com";
+const siteUrl = "https://castaldoenterprisesllc.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -63,8 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-background">
+    <html lang="en" className={`${manrope.variable} h-full antialiased`}>
+      <body className="flex min-h-full flex-col bg-background text-[16px] md:text-[17px]">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

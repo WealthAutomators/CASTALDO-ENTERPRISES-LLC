@@ -1,15 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="9" fill="#DC2626"/>
+  <rect width="32" height="32" rx="8" fill="#18181B"/>
   <text
     x="16"
-    y="14"
+    y="17"
     text-anchor="middle"
     dominant-baseline="middle"
-    fill="#FFFFFF"
+    fill="#C08457"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="13"
-    font-weight="800"
-    letter-spacing="-0.5"
-  >JV</text>
-  <rect x="9" y="22" width="14" height="2.6" rx="1.3" fill="#FBBF24"/>
+    font-size="12"
+    font-weight="600"
+    letter-spacing="0.5"
+  >CE</text>
 </svg>
