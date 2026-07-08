@@ -46,11 +46,6 @@ body {
   letter-spacing: -0.011em;
 }
 
-a {
-  color: inherit;
-  transition: color 0.2s ease;
-}
-
 @keyframes accordion-down {
   from { height: 0; }
   to { height: var(--radix-accordion-content-height); }

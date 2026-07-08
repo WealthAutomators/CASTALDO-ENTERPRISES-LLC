@@ -21,7 +21,7 @@ export function HeroBanner() {
         className="object-cover"
         sizes="100vw"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-black/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/35 to-black/40" />
 
       <Container className="relative flex h-full items-end pb-16 pt-28 md:pb-20 lg:pb-24">
         <motion.div
@@ -40,7 +40,11 @@ export function HeroBanner() {
             {slide.description}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="min-w-[160px] bg-white text-primary hover:bg-secondary hover:text-white">
+            <Button
+              asChild
+              size="lg"
+              className="min-w-[160px] border border-white bg-white text-primary hover:border-secondary hover:bg-secondary hover:text-white"
+            >
               <Link href={slide.ctaLink}>{slide.ctaText}</Link>
             </Button>
             {slide.secondaryCtaText && slide.secondaryCtaLink && (
@@ -48,7 +52,7 @@ export function HeroBanner() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="min-w-[160px] border-white/50 bg-transparent text-white hover:border-white hover:bg-white hover:text-primary"
+                className="min-w-[160px] border-white bg-transparent text-white hover:border-white hover:bg-white hover:text-primary"
               >
                 <Link href={slide.secondaryCtaLink}>{slide.secondaryCtaText}</Link>
               </Button>
