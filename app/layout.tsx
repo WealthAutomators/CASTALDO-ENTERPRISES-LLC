@@ -11,7 +11,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://saiholdingllc.com";
+const siteUrl = "https://jummyventuresllc.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -51,7 +51,6 @@ const organizationSchema = {
     addressCountry: company.address.country,
   },
   sameAs: [
-    company.social.instagram,
     company.social.facebook,
     company.social.twitter,
     company.social.pinterest,

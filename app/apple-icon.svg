@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
-  <rect width="180" height="180" rx="44" fill="#0F766E"/>
+  <rect width="180" height="180" rx="44" fill="#DC2626"/>
   <text
     x="90"
     y="80"
@@ -10,6 +10,6 @@
     font-size="64"
     font-weight="800"
     letter-spacing="-2"
-  >SH</text>
-  <rect x="48" y="126" width="84" height="11" rx="5.5" fill="#FACC15"/>
+  >JV</text>
+  <rect x="48" y="126" width="84" height="11" rx="5.5" fill="#FBBF24"/>
 </svg>

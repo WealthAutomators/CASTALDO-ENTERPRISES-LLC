@@ -27,13 +27,13 @@ export function CategoryCarousel() {
   return (
     <section className="py-8 md:py-10">
       <Container>
-        <SectionHeading title="Popular Categories" centered />
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-6">
+        <SectionHeading title="Shop By Department" centered />
+        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {homepageCategories.map((category) => (
             <Link
               key={category.id}
               href={`/categories/${category.slug}`}
-              className="group relative overflow-hidden rounded-lg border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="group relative overflow-hidden rounded-xl border border-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               <div className="relative aspect-[4/3] overflow-hidden">
                 <Image
@@ -41,11 +41,11 @@ export function CategoryCarousel() {
                   alt={category.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
-                  sizes="(max-width: 768px) 50vw, 16vw"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent" />
-                <div className="absolute inset-0 flex items-end p-3">
-                  <span className="text-sm font-semibold text-white drop-shadow-md">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-transparent transition-colors duration-300 group-hover:from-primary/75 group-hover:via-primary/30" />
+                <div className="absolute inset-0 flex items-end p-4">
+                  <span className="text-sm font-semibold text-white drop-shadow-md md:text-base">
                     {category.name}
                   </span>
                 </div>

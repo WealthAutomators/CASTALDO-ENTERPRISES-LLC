@@ -8,12 +8,12 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Everything You Love. All In One Store.",
+    headline: "Everything You Love.\nOne Trusted Store.",
     description:
-      "Discover electronics, home essentials, beauty products, toys, sports gear and more.",
-    ctaText: "Shop Now",
+      "Shop electronics, home essentials, beauty products, toys, fashion and more with confidence.",
+    ctaText: "Shop Collection",
     ctaLink: "/shop",
-    secondaryCtaText: "Explore Deals",
+    secondaryCtaText: "Today's Deals",
     secondaryCtaLink: "/shop?sale=true",
   },
 ];
@@ -21,21 +21,21 @@ export const heroSlides: HeroSlide[] = [
 export const features: Feature[] = [
   {
     id: "1",
-    icon: "star",
-    title: "Premium Quality",
-    description: "Every product is carefully selected for quality, value, and lasting reliability.",
-  },
-  {
-    id: "2",
     icon: "truck",
-    title: "Fast Shipping",
+    title: "Fast Delivery",
     description: "Free shipping on orders over $75. Most orders arrive in 3–5 business days.",
   },
   {
-    id: "3",
+    id: "2",
     icon: "shield",
-    title: "Secure Checkout",
+    title: "Secure Payments",
     description: "Your payment details are protected with industry-standard encryption.",
+  },
+  {
+    id: "3",
+    icon: "star",
+    title: "Premium Quality",
+    description: "Every product is carefully selected for quality, value, and lasting reliability.",
   },
   {
     id: "4",
@@ -133,10 +133,10 @@ export const homepageNewArrivalSlugs = [
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Everything You Need For Everyday Living",
+  title: "Everything Your Home And Family Needs",
   description:
-    "Explore thousands of products across every category with quality you can trust.",
-  buttonText: "Browse Collection",
+    "Discover quality products across every category with prices you'll appreciate every day.",
+  buttonText: "Start Shopping",
   buttonLink: "/shop",
   image: "/banners/featured.jpg",
 };
@@ -158,9 +158,9 @@ export const bestSellerTabs = [
 ];
 
 export const newsletter = {
-  title: "Stay Updated With Our Best Deals",
+  title: "Get Exclusive Deals Delivered To You",
   description:
-    "Subscribe for exclusive promotions, discounts and new arrivals.",
+    "Subscribe to receive special offers, new arrivals and exclusive member discounts.",
   placeholder: "Enter your email address",
   buttonText: "Subscribe",
 };
@@ -176,7 +176,7 @@ export const sortOptions = [
 export const aboutSection = {
   title: "Shopping Made Easy.",
   description:
-    "SAI HOLDING LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on quality, reliability, and a smooth shopping experience from browsing to checkout.",
+    "JUMMY VENTURES LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on quality, reliability, and a smooth shopping experience from browsing to checkout.",
   checklist: [
     "Wide selection across 13+ categories",
     "Competitive prices on everyday essentials",

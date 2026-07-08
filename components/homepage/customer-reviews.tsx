@@ -12,7 +12,7 @@ export function CustomerReviews() {
           {testimonials.map((t) => (
             <div
               key={t.id}
-              className="rounded-lg border border-border bg-background p-6 shadow-sm transition-shadow duration-300 hover:shadow-md"
+              className="rounded-xl border border-border bg-background p-6 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
             >
               <StarRating rating={t.rating} showCount={false} size="sm" />
               <p className="mt-4 text-sm leading-relaxed text-muted-foreground">&ldquo;{t.text}&rdquo;</p>

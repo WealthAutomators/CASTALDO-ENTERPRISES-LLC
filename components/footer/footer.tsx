@@ -12,17 +12,17 @@ export function Footer() {
       <Container className="py-12">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Image src="/logo/logo.svg" alt={company.name} width={240} height={44} className="mb-4 h-11 w-auto" />
+            <Image src="/logo/logo.svg" alt={company.name} width={268} height={44} className="mb-4 h-11 w-auto" />
             <p className="text-sm leading-relaxed text-muted-foreground">{company.description}</p>
             <div className="mt-4 flex gap-3">
-              <a href={company.social.instagram} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Instagram">
-                <Share2 className="h-5 w-5" />
-              </a>
               <a href={company.social.facebook} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Facebook">
                 <Users className="h-5 w-5" />
               </a>
               <a href={company.social.twitter} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Twitter">
                 <Globe className="h-5 w-5" />
+              </a>
+              <a href={company.social.pinterest} className="text-muted-foreground transition-colors hover:text-primary" aria-label="Pinterest">
+                <Share2 className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -32,7 +32,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {footerLinks.marketplace.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-teal">
                     {link.label}
                   </Link>
                 </li>
@@ -41,11 +41,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Customer Service</h3>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Customer Care</h3>
             <ul className="space-y-2.5">
               {footerLinks.customerService.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-teal">
                     {link.label}
                   </Link>
                 </li>
@@ -58,7 +58,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {footerLinks.policies.map((link) => (
                 <li key={link.label}>
-                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-primary">
+                  <Link href={link.href} className="text-sm text-muted-foreground transition-colors hover:text-teal">
                     {link.label}
                   </Link>
                 </li>
@@ -71,7 +71,7 @@ export function Footer() {
                 {company.address.city}, {company.address.state}
               </li>
               <li>
-                <a href={`mailto:${company.email}`} className="transition-colors hover:text-primary">
+                <a href={`mailto:${company.email}`} className="transition-colors hover:text-teal">
                   {company.email}
                 </a>
               </li>

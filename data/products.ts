@@ -19,7 +19,7 @@ export const products: Product[] = [
     badge: "Sale",
     featured: true,
     bestseller: true,
-    sku: "SAI-EL-001",
+    sku: "JV-EL-001",
   },
   {
     id: "p2",
@@ -37,7 +37,7 @@ export const products: Product[] = [
     stock: 85,
     featured: true,
     bestseller: true,
-    sku: "SAI-EL-002",
+    sku: "JV-EL-002",
   },
   {
     id: "p3",
@@ -53,7 +53,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 156,
     stock: 60,
-    sku: "SAI-EL-003",
+    sku: "JV-EL-003",
   },
   {
     id: "p4",
@@ -73,7 +73,7 @@ export const products: Product[] = [
     badge: "Sale",
     featured: true,
     bestseller: true,
-    sku: "SAI-HK-001",
+    sku: "JV-HK-001",
   },
   {
     id: "p5",
@@ -93,7 +93,7 @@ export const products: Product[] = [
     badge: "Sale",
     featured: true,
     bestseller: true,
-    sku: "SAI-HK-002",
+    sku: "JV-HK-002",
   },
   {
     id: "p6",
@@ -110,7 +110,7 @@ export const products: Product[] = [
     reviews: 189,
     stock: 55,
     featured: true,
-    sku: "SAI-HK-003",
+    sku: "JV-HK-003",
   },
   {
     id: "p7",
@@ -130,7 +130,7 @@ export const products: Product[] = [
     badge: "Sale",
     featured: true,
     bestseller: true,
-    sku: "SAI-BA-001",
+    sku: "JV-BA-001",
   },
   {
     id: "p8",
@@ -146,7 +146,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 143,
     stock: 110,
-    sku: "SAI-BA-002",
+    sku: "JV-BA-002",
   },
   {
     id: "p9",
@@ -164,7 +164,7 @@ export const products: Product[] = [
     stock: 65,
     featured: true,
     bestseller: true,
-    sku: "SAI-ET-001",
+    sku: "JV-ET-001",
   },
   {
     id: "p10",
@@ -181,7 +181,7 @@ export const products: Product[] = [
     reviews: 124,
     stock: 40,
     newArrival: true,
-    sku: "SAI-ET-002",
+    sku: "JV-ET-002",
   },
   {
     id: "p11",
@@ -201,7 +201,7 @@ export const products: Product[] = [
     badge: "Sale",
     featured: true,
     bestseller: true,
-    sku: "SAI-PT-001",
+    sku: "JV-PT-001",
   },
   {
     id: "p12",
@@ -217,7 +217,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 98,
     stock: 75,
-    sku: "SAI-PT-002",
+    sku: "JV-PT-002",
   },
   {
     id: "p13",
@@ -234,7 +234,7 @@ export const products: Product[] = [
     reviews: 213,
     stock: 80,
     newArrival: true,
-    sku: "SAI-BT-001",
+    sku: "JV-BT-001",
   },
   {
     id: "p14",
@@ -250,7 +250,7 @@ export const products: Product[] = [
     rating: 4.4,
     reviews: 167,
     stock: 95,
-    sku: "SAI-BT-002",
+    sku: "JV-BT-002",
   },
   {
     id: "p15",
@@ -268,7 +268,7 @@ export const products: Product[] = [
     stock: 100,
     featured: true,
     bestseller: true,
-    sku: "SAI-SP-001",
+    sku: "JV-SP-001",
   },
   {
     id: "p16",
@@ -284,7 +284,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 234,
     stock: 130,
-    sku: "SAI-SP-002",
+    sku: "JV-SP-002",
   },
   {
     id: "p17",
@@ -301,7 +301,7 @@ export const products: Product[] = [
     reviews: 178,
     stock: 85,
     featured: true,
-    sku: "SAI-OF-001",
+    sku: "JV-OF-001",
   },
   {
     id: "p18",
@@ -317,7 +317,7 @@ export const products: Product[] = [
     rating: 4.4,
     reviews: 112,
     stock: 150,
-    sku: "SAI-OF-002",
+    sku: "JV-OF-002",
   },
   {
     id: "p19",
@@ -333,7 +333,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 156,
     stock: 120,
-    sku: "SAI-FA-001",
+    sku: "JV-FA-001",
   },
   {
     id: "p20",
@@ -351,7 +351,7 @@ export const products: Product[] = [
     reviews: 89,
     stock: 200,
     badge: "Sale",
-    sku: "SAI-FA-002",
+    sku: "JV-FA-002",
   },
   {
     id: "p21",
@@ -368,7 +368,7 @@ export const products: Product[] = [
     reviews: 267,
     stock: 35,
     newArrival: true,
-    sku: "SAI-BB-001",
+    sku: "JV-BB-001",
   },
   {
     id: "p22",
@@ -384,7 +384,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 198,
     stock: 110,
-    sku: "SAI-BB-002",
+    sku: "JV-BB-002",
   },
   {
     id: "p23",
@@ -400,7 +400,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 145,
     stock: 80,
-    sku: "SAI-TG-001",
+    sku: "JV-TG-001",
   },
   {
     id: "p24",
@@ -416,7 +416,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 87,
     stock: 55,
-    sku: "SAI-TG-002",
+    sku: "JV-TG-002",
   },
   {
     id: "p25",
@@ -433,7 +433,7 @@ export const products: Product[] = [
     reviews: 203,
     stock: 95,
     newArrival: true,
-    sku: "SAI-HW-001",
+    sku: "JV-HW-001",
   },
   {
     id: "p26",
@@ -449,7 +449,7 @@ export const products: Product[] = [
     rating: 4.5,
     reviews: 176,
     stock: 70,
-    sku: "SAI-HW-002",
+    sku: "JV-HW-002",
   },
   {
     id: "p27",
@@ -469,7 +469,7 @@ export const products: Product[] = [
     badge: "Sale",
     featured: true,
     bestseller: true,
-    sku: "SAI-GM-001",
+    sku: "JV-GM-001",
   },
   {
     id: "p28",
@@ -486,7 +486,7 @@ export const products: Product[] = [
     reviews: 198,
     stock: 80,
     featured: true,
-    sku: "SAI-GM-002",
+    sku: "JV-GM-002",
   },
   {
     id: "p29",
@@ -505,7 +505,7 @@ export const products: Product[] = [
     stock: 45,
     badge: "Sale",
     newArrival: true,
-    sku: "SAI-GM-003",
+    sku: "JV-GM-003",
   },
   {
     id: "p30",
@@ -522,7 +522,7 @@ export const products: Product[] = [
     reviews: 124,
     stock: 90,
     newArrival: true,
-    sku: "SAI-GM-004",
+    sku: "JV-GM-004",
   },
 ];
 

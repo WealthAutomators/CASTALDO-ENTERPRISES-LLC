@@ -21,9 +21,9 @@ export function Newsletter() {
   return (
     <section className="py-12 md:py-16">
       <Container>
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0F766E] via-[#0E6E66] to-[#0B5952] px-6 py-12 text-center md:px-16 md:py-16">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#DC2626] via-[#B91C1C] to-[#991B1B] px-6 py-12 text-center md:px-16 md:py-16">
           <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/5" />
-          <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-secondary/15" />
+          <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-secondary/20" />
           <div className="relative">
             <h2 className="text-2xl font-semibold tracking-tight text-white md:text-3xl">{newsletter.title}</h2>
             <p className="mx-auto mt-3 max-w-lg text-white/85">{newsletter.description}</p>
@@ -37,9 +37,13 @@ export function Newsletter() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="flex-1 rounded-lg border-white/20 bg-white/10 text-white placeholder:text-white/50 backdrop-blur-sm"
+                  className="flex-1 rounded-xl border-white/20 bg-white/10 text-white placeholder:text-white/50 backdrop-blur-sm"
                 />
-                <Button type="submit" size="lg" variant="accent" className="shrink-0">
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="shrink-0 bg-secondary text-secondary-foreground hover:bg-secondary/90 hover:text-secondary-foreground"
+                >
                   {newsletter.buttonText}
                 </Button>
               </form>

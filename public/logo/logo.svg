@@ -1,33 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="248" height="44" viewBox="0 0 248 44" fill="none">
-  <!-- Hexagon emblem -->
-  <path d="M22 3 L38.45 12.5 L38.45 31.5 L22 41 L5.55 31.5 L5.55 12.5 Z" fill="#0F766E"/>
-  <!-- Gold accent facet -->
-  <path d="M22 3 L38.45 12.5 L38.45 31.5" stroke="#FACC15" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="268" height="44" viewBox="0 0 268 44" fill="none">
+  <!-- Shopping bag icon -->
+  <rect x="6" y="12" width="28" height="26" rx="5" fill="#DC2626"/>
+  <path d="M12 12 C12 6.5 16 3 20 3 C24 3 28 6.5 28 12" stroke="#FBBF24" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M6 18 H34" stroke="#FBBF24" stroke-width="2" opacity="0.9"/>
   <text
-    x="21.5"
-    y="24"
+    x="20"
+    y="30"
     text-anchor="middle"
     dominant-baseline="middle"
     fill="#FFFFFF"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="14"
+    font-size="11"
     font-weight="800"
-    letter-spacing="-0.5"
-  >SH</text>
+    letter-spacing="-0.4"
+  >JV</text>
   <!-- Wordmark -->
   <text
-    x="52"
+    x="46"
     y="20"
-    fill="#0F766E"
+    fill="#DC2626"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
-    font-size="16"
+    font-size="15"
     font-weight="800"
     letter-spacing="-0.3"
-  >SAI HOLDING</text>
+  >JUMMY VENTURES</text>
   <text
-    x="52.5"
+    x="46.5"
     y="34"
-    fill="#FACC15"
+    fill="#FBBF24"
     font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
     font-size="10"
     font-weight="700"

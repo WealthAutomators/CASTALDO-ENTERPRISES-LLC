@@ -82,12 +82,6 @@ export interface PromoBanner {
   image: string;
 }
 
-export interface InstagramPost {
-  id: string;
-  image: string;
-  alt: string;
-}
-
 export interface SortOption {
   value: string;
   label: string;

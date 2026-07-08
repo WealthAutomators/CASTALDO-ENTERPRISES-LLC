@@ -14,7 +14,7 @@ export function CategoryNav() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block whitespace-nowrap rounded-lg px-3.5 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-primary/5 hover:text-primary"
+                  className="block whitespace-nowrap rounded-xl px-3.5 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-primary/5 hover:text-teal"
                 >
                   {link.label}
                 </Link>
