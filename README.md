@@ -1,8 +1,8 @@
-# VALUEBUY PARTNERS LLC
+# SAI HOLDING LLC
 
-A production-quality, reusable ecommerce storefront template built with Next.js App Router, TypeScript, and Tailwind CSS.
+A production-quality ecommerce storefront built with Next.js App Router, TypeScript, and Tailwind CSS.
 
-This is the master template for VALUEBUY PARTNERS LLC — a general marketplace selling electronics, home essentials, beauty, toys, pet supplies, and more. Duplicate this repository and swap brand assets, colors, and data to launch new stores without rewriting components.
+SAI HOLDING LLC — *Smart Choices. Better Living.* — is a general online marketplace selling electronics, home essentials, beauty, toys, pet supplies, sports gear, and more. Brand assets, colors, copy, and product data are data-driven, so the storefront can be re-themed without rewriting components.
 
 ## Tech Stack
 

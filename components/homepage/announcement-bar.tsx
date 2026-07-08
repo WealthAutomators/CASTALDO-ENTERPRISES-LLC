@@ -1,16 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { company } from "@/data/company";
+import { Truck } from "lucide-react";
+import { announcementText } from "@/data/navigation";
 import { Container } from "@/components/ui/container";
 
 export function AnnouncementBar() {
   return (
     <div className="bg-primary text-center text-xs font-medium text-white sm:text-sm">
-      <Container className="py-2">
+      <Container className="flex items-center justify-center gap-2 py-2">
+        <Truck className="h-3.5 w-3.5 text-secondary" />
         <p>
-          Welcome to {company.name} — {company.tagline}{" "}
-          <Link href="/shop?sale=true" className="ml-1 underline underline-offset-2 transition-colors hover:text-accent">
+          {announcementText}
+          <Link
+            href="/shop?sale=true"
+            className="ml-2 font-semibold text-secondary underline-offset-2 transition-colors hover:underline"
+          >
             Shop Deals →
           </Link>
         </p>

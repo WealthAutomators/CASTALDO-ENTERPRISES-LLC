@@ -8,12 +8,12 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "1",
     image: "/hero/hero-1.jpg",
-    headline: "Shop More. Spend Less.",
+    headline: "Everything You Love. All In One Store.",
     description:
-      "Thousands of quality products at prices you'll love.",
+      "Discover electronics, home essentials, beauty products, toys, sports gear and more.",
     ctaText: "Shop Now",
     ctaLink: "/shop",
-    secondaryCtaText: "Today's Deals",
+    secondaryCtaText: "Explore Deals",
     secondaryCtaLink: "/shop?sale=true",
   },
 ];
@@ -21,27 +21,58 @@ export const heroSlides: HeroSlide[] = [
 export const features: Feature[] = [
   {
     id: "1",
-    icon: "truck",
-    title: "Fast Delivery",
-    description: "Free shipping on orders over $50. Most orders arrive in 3–5 business days.",
+    icon: "star",
+    title: "Premium Quality",
+    description: "Every product is carefully selected for quality, value, and lasting reliability.",
   },
   {
     id: "2",
-    icon: "shield",
-    title: "Secure Checkout",
-    description: "Your payment information is protected with industry-standard encryption.",
+    icon: "truck",
+    title: "Fast Shipping",
+    description: "Free shipping on orders over $75. Most orders arrive in 3–5 business days.",
   },
   {
     id: "3",
-    icon: "star",
-    title: "Trusted Marketplace",
-    description: "Every product is carefully selected for quality, value, and reliability.",
+    icon: "shield",
+    title: "Secure Checkout",
+    description: "Your payment details are protected with industry-standard encryption.",
   },
   {
     id: "4",
     icon: "rotate",
     title: "Easy Returns",
     description: "Hassle-free 30-day returns on most items. We make it simple.",
+  },
+];
+
+export const featuredCollections = [
+  {
+    id: "1",
+    title: "Tech & Electronics",
+    subtitle: "Audio, gadgets & smart gear",
+    href: "/categories/electronics",
+    image: "/categories/electronics.jpg",
+  },
+  {
+    id: "2",
+    title: "Home & Kitchen",
+    subtitle: "Essentials for everyday living",
+    href: "/categories/home-kitchen",
+    image: "/categories/home-kitchen.jpg",
+  },
+  {
+    id: "3",
+    title: "Beauty & Wellness",
+    subtitle: "Skincare & self-care favorites",
+    href: "/categories/beauty",
+    image: "/categories/beauty.jpg",
+  },
+  {
+    id: "4",
+    title: "Play & Learn",
+    subtitle: "Toys, games & educational fun",
+    href: "/categories/toys-games",
+    image: "/categories/toys-games.jpg",
   },
 ];
 
@@ -102,18 +133,18 @@ export const homepageNewArrivalSlugs = [
 
 export const promotionalBanner: PromoBanner = {
   id: "1",
-  title: "Everyday Savings Across Every Category",
+  title: "Everything You Need For Everyday Living",
   description:
-    "Shop electronics, home essentials, toys, beauty products and more at unbeatable prices.",
-  buttonText: "Browse Deals",
-  buttonLink: "/shop?sale=true",
+    "Explore thousands of products across every category with quality you can trust.",
+  buttonText: "Browse Collection",
+  buttonLink: "/shop",
   image: "/banners/featured.jpg",
 };
 
 export const featuredCollection = {
   title: "Featured Products",
   description:
-    "Hand-picked favorites across electronics, home, beauty, and more — everything you need in one marketplace.",
+    "Hand-picked favorites across electronics, home, beauty, and more — everything you need in one place.",
   bannerImage: "/banners/featured.jpg",
   categorySlug: "electronics",
 };
@@ -127,9 +158,9 @@ export const bestSellerTabs = [
 ];
 
 export const newsletter = {
-  title: "Never Miss Another Deal",
+  title: "Stay Updated With Our Best Deals",
   description:
-    "Join our newsletter for exclusive offers, discounts and early access to new arrivals.",
+    "Subscribe for exclusive promotions, discounts and new arrivals.",
   placeholder: "Enter your email address",
   buttonText: "Subscribe",
 };
@@ -145,7 +176,7 @@ export const sortOptions = [
 export const aboutSection = {
   title: "Shopping Made Easy.",
   description:
-    "VALUEBUY PARTNERS LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on affordability, reliability, and a smooth shopping experience from browsing to checkout.",
+    "SAI HOLDING LLC brings together quality products across multiple categories, helping families find everything they need in one trusted online marketplace. We focus on quality, reliability, and a smooth shopping experience from browsing to checkout.",
   checklist: [
     "Wide selection across 13+ categories",
     "Competitive prices on everyday essentials",

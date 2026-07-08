@@ -9,12 +9,12 @@ export function CategoryNav() {
     <nav className="border-b border-border bg-white">
       <Container>
         <div className="overflow-x-auto scrollbar-none">
-          <ul className="flex min-w-max items-center gap-0.5 py-1.5">
+          <ul className="flex min-w-max items-center justify-center gap-1 py-2">
             {navigationLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="block whitespace-nowrap rounded-lg px-3 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-primary/5 hover:text-primary"
+                  className="block whitespace-nowrap rounded-lg px-3.5 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-primary/5 hover:text-primary"
                 >
                   {link.label}
                 </Link>

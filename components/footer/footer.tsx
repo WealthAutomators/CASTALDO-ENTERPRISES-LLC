@@ -28,7 +28,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Marketplace</h3>
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider">Shop</h3>
             <ul className="space-y-2.5">
               {footerLinks.marketplace.map((link) => (
                 <li key={link.label}>

@@ -11,12 +11,51 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://saiholdingllc.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${company.name} — ${company.tagline}`,
     template: `%s | ${company.name}`,
   },
   description: company.description,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: company.name,
+    title: `${company.name} — ${company.tagline}`,
+    description: company.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${company.name} — ${company.tagline}`,
+    description: company.description,
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: company.name,
+  description: company.description,
+  url: siteUrl,
+  email: company.email,
+  slogan: company.tagline,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: company.address.street,
+    addressLocality: company.address.city,
+    addressRegion: company.address.state,
+    addressCountry: company.address.country,
+  },
+  sameAs: [
+    company.social.instagram,
+    company.social.facebook,
+    company.social.twitter,
+    company.social.pinterest,
+  ],
 };
 
 export default function RootLayout({
@@ -27,6 +66,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-background">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
         <Providers>
           <SiteHeader />
           <main className="flex-1">{children}</main>
